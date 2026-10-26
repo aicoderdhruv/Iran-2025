@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iran · June 2025</title>
+<meta name="description" content="Iran — an eye-opening tour. Experiences and evacuation from a land less travelled. 7–22 June 2025.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0a0f24;--deep:#070a18;--lapis:#16224f;--turq:#3cc1b8;--gold:#d9a441;--gold2:#f0cf8a;
+  --rose:#e9a7b4;--ember:#e2574c;--sand:#f1e7d6;--ink:#f6f0e6;--muted:rgba(246,240,230,.62);--line:rgba(217,164,65,.28);
+  --girih:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23d9a441' stroke-width='.7'%3E%3Crect x='26' y='26' width='44' height='44'/%3E%3Crect x='26' y='26' width='44' height='44' transform='rotate(45 48 48)'/%3E%3Ccircle cx='48' cy='48' r='9'/%3E%3Cpath d='M0 0L26 26M96 0L70 26M0 96L26 70M96 96L70 70'/%3E%3C/g%3E%3C/svg%3E");
+}
+*{box-sizing:border-box}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{margin:0;background:var(--night);color:var(--ink);font-family:'Jost',system-ui,sans-serif;font-weight:300;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+.fa{font-family:'Noto Nastaliq Urdu',serif;direction:rtl}
+.label{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:90;opacity:.06;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-2%,-1%)}100%{transform:translate(1%,3%)}}
+.progress{position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--turq),var(--gold),var(--rose));transform-origin:0 50%;transform:scaleX(0);z-index:80}
+
+.pre{position:fixed;inset:0;z-index:100;background:var(--deep);display:grid;place-items:center}
+.pre svg{width:120px;height:120px}
+.pre rect,.pre circle{fill:none;stroke:var(--gold);stroke-width:1}
+.pre .fa{position:absolute;bottom:22vh;font-size:2rem;color:var(--gold2);opacity:0}
+
+.nav{position:fixed;left:28px;top:50%;transform:translateY(-50%);z-index:70;display:flex;flex-direction:column;gap:14px;opacity:0;pointer-events:none;transition:opacity .6s}
+.nav.on{opacity:1;pointer-events:auto}
+.nav a{display:flex;align-items:center;gap:12px;color:var(--muted);text-decoration:none;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;cursor:pointer}
+.nav a i{width:7px;height:7px;border:1px solid var(--gold);transform:rotate(45deg);transition:.4s}
+.nav a span{opacity:0;transform:translateX(-6px);transition:.4s}
+.nav:hover a span,.nav a.active span{opacity:1;transform:none}
+.nav a.active{color:var(--gold2)}
+.nav a.active i{background:var(--gold);box-shadow:0 0 12px var(--gold)}
+
+.hero{position:relative;height:100vh;min-height:620px;overflow:hidden;display:grid;place-items:center;text-align:center}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.25)}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(10,15,36,.25),rgba(10,15,36,.86) 75%),linear-gradient(180deg,rgba(10,15,36,.3),rgba(10,15,36,0) 40%,var(--night))}
+.hero-c{position:relative;z-index:2;padding:0 16px}
+.hero .fa{font-size:clamp(2rem,5vw,3.4rem);color:var(--gold2);line-height:1.8}
+.hero h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(5rem,20vw,17rem);line-height:.82;margin:0;letter-spacing:.06em;perspective:600px}
+.hero h1 .ch{display:inline-block}
+.hero .sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2.6vw,2.1rem);margin:.6em 0 .2em}
+.hero .sub2{color:var(--muted);font-size:clamp(.9rem,1.3vw,1.05rem);letter-spacing:.06em}
+.hero .dates{margin-top:2.2rem}
+.scroll-hint{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:10px}
+.scroll-hint b{width:1px;height:54px;background:linear-gradient(var(--gold),transparent);animation:drip 2.2s ease-in-out infinite;transform-origin:top}
+@keyframes drip{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+section{position:relative}
+.wrap{width:min(1240px,90vw);margin:0 auto;position:relative}
+.girih{position:absolute;inset:0;background-image:var(--girih);opacity:.07;pointer-events:none}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.wi{display:inline-block}
+
+.prologue{padding:22vh 0 6vh}
+.prologue h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.4rem,6vw,5.4rem);line-height:1;margin:.4em 0 .5em;max-width:14ch}
+.prologue p.lead{font-family:'Cormorant Garamond',serif;font-size:clamp(1.25rem,2.2vw,1.8rem);line-height:1.45;max-width:36ch;color:var(--sand)}
+.prologue p.lead em{color:var(--gold2)}
+
+.route{height:100vh;min-height:640px;background:radial-gradient(ellipse at 40% 50%,#121a3d,var(--deep) 70%);overflow:hidden}
+.route-in{position:absolute;inset:0;display:grid;grid-template-columns:minmax(260px,1fr) 2fr;align-items:center;gap:3vw;padding:0 6vw 0 9vw}
+.route h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,4vw,3.6rem);line-height:1.05;margin:.5em 0}
+.route .legend{display:grid;gap:12px;margin-top:2rem;font-size:.85rem;color:var(--muted)}
+.route .legend span{display:flex;align-items:center;gap:12px}
+.route .legend i{width:34px;height:0;border-top:2px solid var(--gold)}
+.route .legend i.r{border-color:var(--ember)}
+.route .legend i.d{border-top:2px dashed rgba(246,240,230,.4)}
+.route svg{width:100%;height:auto;max-height:86vh;overflow:visible}
+.route .gridl{stroke:rgba(217,164,65,.08);stroke-width:1}
+.route .p{fill:none;stroke-linecap:round}
+.route .city circle.o{fill:none;stroke:var(--gold);stroke-width:1}
+.route .city circle.c{fill:var(--gold)}
+.route .city text{fill:var(--ink);font-family:'Cormorant Garamond',serif;font-size:26px}
+.route .city text.f{font-family:'Noto Nastaliq Urdu',serif;font-size:15px;fill:var(--gold2)}
+.route .flash{font-family:'Cormorant Garamond',serif;font-style:italic;fill:var(--ember);font-size:30px}
+
+.chap{height:100vh;min-height:600px;overflow:hidden;display:grid;place-items:center;text-align:center}
+.chap-bg{position:absolute;inset:-8% 0}
+.chap-bg img{width:100%;height:100%;object-fit:cover}
+.chap-veil{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(10,15,36,.35),rgba(10,15,36,.9) 80%),linear-gradient(var(--night),transparent 18%,transparent 80%,var(--night))}
+.chap-c{position:relative;z-index:2;padding:0 16px}
+.chap-num{font-family:'Cormorant Garamond',serif;font-size:1.1rem;letter-spacing:.5em;color:var(--gold)}
+.chap-fa{font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(3rem,9vw,7.5rem);line-height:1.9;color:var(--gold2);text-shadow:0 0 40px rgba(217,164,65,.25)}
+.chap-en{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.6rem,7vw,6rem);letter-spacing:.14em;text-transform:uppercase;margin:-.2em 0 .25em;line-height:1}
+.chap-line{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.15rem,2vw,1.6rem);max-width:34ch;margin:0 auto;color:var(--sand)}
+.chap-line .tr{display:block;font-style:normal;font-size:.8em;color:var(--muted);margin-top:.4em}
+
+.moments{padding:8vh 0 4vh}
+.moment{width:min(1240px,90vw);margin:0 auto 22vh}
+.m-h{display:flex;flex-direction:column;gap:.7rem;max-width:620px;margin-bottom:6vh}
+.moment.right .m-h{margin-left:auto;text-align:right;align-items:flex-end}
+.m-t{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.9rem,3.8vw,3.3rem);line-height:1.08;margin:0}
+.m-rule{width:64px;height:1px;background:var(--gold);transform-origin:left}
+.moment.right .m-rule{transform-origin:right}
+.g{display:grid;gap:clamp(12px,2.2vw,30px);align-items:start}
+.g.n1{grid-template-columns:1fr;width:min(900px,100%);margin:0 auto}
+.g.n2{grid-template-columns:1fr 1fr;width:min(1000px,100%);margin:0 auto}
+.g.n2 .ph:nth-child(2){margin-top:14vh}
+.g.n3{grid-template-columns:1.2fr 1fr 1fr}
+.g.n3 .ph:nth-child(2){margin-top:16vh}.g.n3 .ph:nth-child(3){margin-top:6vh}
+.g.n4{grid-template-columns:repeat(4,1fr)}
+.g.n4 .ph:nth-child(2){margin-top:12vh}.g.n4 .ph:nth-child(3){margin-top:4vh}.g.n4 .ph:nth-child(4){margin-top:17vh}
+.ph{margin:0;cursor:zoom-in;position:relative}
+.ph-in{overflow:hidden;position:relative;background:#141b38;border-radius:2px}
+.ph.P .ph-in{aspect-ratio:3/4}.ph.L .ph-in{aspect-ratio:4/3}.ph.S .ph-in{aspect-ratio:1/1}
+.ph img{width:100%;height:100%;object-fit:cover;transition:filter .6s}
+.ph::after{content:"";position:absolute;inset:10px;border:1px solid rgba(240,207,138,0);transition:border-color .5s,inset .5s;pointer-events:none}
+.ph:hover::after{border-color:rgba(240,207,138,.55);inset:14px}
+.ph:hover img{filter:brightness(1.08) saturate(1.05)}
+.arch .ph-in{border-radius:50% 50% 2px 2px / 32% 32% 2px 2px}
+
+.inter{padding:18vh 0;overflow:hidden;background:linear-gradient(180deg,var(--night),#0e1633 50%,var(--night))}
+.inter-in{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center;width:min(1180px,90vw);margin:0 auto;position:relative}
+.inter q{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.8vw,3.4rem);line-height:1.12;quotes:none;display:block}
+.rial{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,8vw,7rem);color:var(--gold2);line-height:1;margin:.25em 0 .1em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.inter small{color:var(--muted);letter-spacing:.2em;text-transform:uppercase;font-size:.7rem}
+
+.hz{height:100vh;overflow:hidden;background:var(--night)}
+.hz-track{display:flex;height:100%;align-items:center;gap:7vw;padding:0 8vw;width:max-content}
+.hz-p{display:flex;flex-direction:column;justify-content:center;gap:3.5vh;height:100%}
+.hz-meta{max-width:520px}
+.hz-meta h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.8rem,3vw,2.8rem);margin:.35em 0 0;line-height:1.08}
+.hz-imgs{display:flex;gap:18px;height:60vh;align-items:flex-start}
+.hz-imgs .ph{height:100%}
+.hz-imgs .ph:nth-child(2){height:84%;margin-top:7vh}
+.hz-imgs .ph:nth-child(3){height:90%}
+.hz-imgs .ph:nth-child(4){height:78%;margin-top:11vh}
+.hz-imgs .ph-in{height:100%;width:auto}
+.hz-end{display:flex;align-items:center}
+.hz-end p{font-family:'Noto Nastaliq Urdu',serif;font-size:clamp(2.2rem,4vw,3.6rem);color:var(--gold2);direction:rtl;line-height:2;margin:0}
+
+.pink{height:115vh;overflow:hidden;display:grid;place-items:end start}
+.pink-bg{position:absolute;inset:0}
+.pink-bg img{width:100%;height:100%;object-fit:cover}
+.pink-light{position:absolute;inset:-30%;mix-blend-mode:screen;opacity:.5;background:conic-gradient(from 0deg at 30% 40%,rgba(233,167,180,0),rgba(233,167,180,.45),rgba(60,193,184,.25),rgba(240,207,138,.4),rgba(233,167,180,0) 60%);filter:blur(60px);animation:spin 26s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pink::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--night),transparent 25%,transparent 55%,var(--night))}
+.pink-c{position:relative;z-index:2;padding:0 6vw 14vh;max-width:820px}
+.pink-c h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.4rem,6vw,5.4rem);line-height:1;margin:.3em 0}
+.pink-c h3 em{color:var(--rose)}
+
+.rupture{height:100vh;background:#040509;overflow:hidden;display:grid;place-items:center;text-align:center}
+.rupture .glow{position:absolute;width:70vmax;height:70vmax;border-radius:50%;background:radial-gradient(circle,rgba(226,87,76,.22),transparent 60%);opacity:0}
+.rupture .date{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,9vw,7.5rem);color:var(--ember);line-height:1;margin-bottom:.4em;font-weight:300}
+.rupture .rl{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.6vw,2.2rem);max-width:30ch;margin:.5em auto;opacity:0;line-height:1.3}
+.rupture .rl em{color:var(--ember);font-style:italic}
+.rupture-c{position:relative;z-index:2;padding:0 6vw}
+
+.evac{height:100vh;overflow:hidden;display:grid;place-items:center;text-align:center}
+.evac-bg{position:absolute;inset:0}
+.evac-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.75) contrast(1.05) brightness(.55)}
+.evac::after{content:"";position:absolute;inset:0;background:linear-gradient(#040509,transparent 30%,transparent 70%,var(--night))}
+.evac-c{position:relative;z-index:2}
+.km{font-family:'Cormorant Garamond',serif;font-size:clamp(4.5rem,15vw,12rem);line-height:.9;color:var(--ink);font-variant-numeric:tabular-nums;margin-top:.15em}
+.km sup{font-size:.25em;color:var(--ember);letter-spacing:.2em;vertical-align:top;margin-left:.2em}
+.evac h3{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.6rem,3.4vw,2.8rem);margin:.4em 0 0;letter-spacing:.04em}
+.evac h3 b{font-weight:300;color:var(--ember);margin:0 .4em}
+
+.badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(226,87,76,.5);color:#f3b0a8;padding:6px 14px;border-radius:40px;font-size:.66rem;letter-spacing:.26em;text-transform:uppercase}
+.badge i{width:6px;height:6px;border-radius:50%;background:var(--ember);box-shadow:0 0 10px var(--ember);animation:blink 1.6s infinite}
+@keyframes blink{50%{opacity:.25}}
+
+.finale{padding:22vh 0 18vh;text-align:center;overflow:hidden;background:radial-gradient(ellipse at 50% 60%,#16224f,var(--night) 70%)}
+.finale .big{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.2rem,5.4vw,4.8rem);line-height:1.08;max-width:18ch;margin:0 auto 12vh;position:relative}
+.finale .frame{width:min(440px,78vw);margin:0 auto;position:relative}
+.finale .frame .ph-in{aspect-ratio:3/4}
+.finale .frame::before{content:"";position:absolute;inset:-18px;border:1px solid var(--line);border-radius:50% 50% 4px 4px / 32% 32% 4px 4px;pointer-events:none}
+.finale .names{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.4vw,2.8rem);margin:2.4rem 0 .3rem}
+.finale .fa{font-size:clamp(1.8rem,3.6vw,2.8rem);color:var(--gold2);line-height:2.2;margin-top:2rem}
+.finale .bye{color:var(--muted);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.2rem}
+.star{width:64px;height:64px;margin:0 auto 2rem;display:block;position:relative}
+.star *{fill:none;stroke:var(--gold);stroke-width:1}
+footer{padding:4rem 0 3rem;text-align:center;color:rgba(246,240,230,.35);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
+
+.lb{position:fixed;inset:0;z-index:95;background:rgba(5,7,16,.94);display:none;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:84vh;object-fit:contain;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lb .cap{position:absolute;bottom:3vh;left:0;right:0;text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.15rem;color:var(--sand);padding:0 16px}
+.lb button{position:absolute;background:none;border:1px solid var(--line);color:var(--gold2);width:48px;height:48px;border-radius:50%;font-size:1.2rem;cursor:pointer;transition:.3s}
+.lb button:hover{background:rgba(217,164,65,.15)}
+.lb .x{top:22px;right:22px}.lb .pv{left:22px;top:50%;transform:translateY(-50%)}.lb .nx{right:22px;top:50%;transform:translateY(-50%)}
+
+@media (max-width:899px){
+  .nav{display:none}
+  .route-in{grid-template-columns:1fr;padding:12vh 16px 0;align-content:start;gap:0}
+  .route .legend{margin-top:1rem}
+  .route h2{margin:.3em 0}
+  .g.n3,.g.n4{grid-template-columns:1fr 1fr}
+  .g.n3 .ph:first-child{grid-column:1/-1}
+  .g.n3 .ph:nth-child(2){margin-top:0}
+  .g.n3 .ph:nth-child(3){margin-top:8vh}
+  .g.n4 .ph:nth-child(3){margin-top:-8vh}.g.n4 .ph:nth-child(4){margin-top:4vh}
+  .g.n2 .ph:nth-child(2){margin-top:8vh}
+  .moment{margin-bottom:14vh}
+  .inter-in{grid-template-columns:1fr}
+  .hz{height:auto}
+  .hz-track{flex-direction:column;width:100%;padding:6vh 16px;gap:10vh}
+  .hz-p{height:auto;width:100%}
+  .hz-imgs{height:52vh;overflow-x:auto;width:100%;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+  .hz-imgs .ph{flex:0 0 auto}
+  .hz-imgs .ph:nth-child(n){margin-top:0;height:100%}
+  .wrap,.moment,.inter-in{width:calc(100vw - 32px)}
+}
+@media (prefers-reduced-motion:reduce){.grain,.pink-light{animation:none}}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<div class="progress"></div>
+
+<div class="pre" id="pre">
+  <svg viewBox="0 0 100 100"><rect x="25" y="25" width="50" height="50"/><rect x="25" y="25" width="50" height="50" transform="rotate(45 50 50)"/><circle cx="50" cy="50" r="12"/><circle cx="50" cy="50" r="46"/></svg>
+  <div class="fa">ایران</div>
+</div>
+
+<nav class="nav" id="nav"></nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg"><img src="image1.jpg" alt="Iran" id="heroImg" fetchpriority="high"></div>
+  <div class="hero-c">
+    <div class="fa hero-fa">ایران</div>
+    <h1 id="heroTitle">IRAN</h1>
+    <p class="sub">An eye-opening tour</p>
+    <p class="sub2">Experiences and evacuation from a land less travelled</p>
+    <p class="label dates">7 — 22 June 2025</p>
+  </div>
+  <div class="scroll-hint"><span class="label" style="font-size:.6rem">Scroll</span><b></b></div>
+</header>
+
+<section class="prologue" data-nav="Prologue" id="prologue">
+  <div class="girih"></div>
+  <div class="wrap">
+    <span class="label">Prologue</span>
+    <h2 class="split">How &amp; why — Iran, and the group</h2>
+    <p class="lead fade">An architectural tour through Tehran, Kashan, Isfahan and Shiraz. <em>Eleven days were planned. Sixteen were lived.</em></p>
+  </div>
+  <div class="moments" style="padding-top:12vh" id="prologueGallery"></div>
+</section>
+
+<section class="route" id="route" data-nav="The Route">
+  <div class="girih"></div>
+  <div class="route-in">
+    <div>
+      <span class="label">The route</span>
+      <h2>The plan, and the road that rewrote it.</h2>
+      <div class="legend">
+        <span><i></i>The architectural tour</span>
+        <span><i class="d"></i>The way home we had planned</span>
+        <span><i class="r"></i>The way home we took</span>
+      </div>
+    </div>
+    <svg viewBox="80 60 940 600" id="map" aria-label="Route map of the journey"></svg>
+  </div>
+</section>
+
+<main id="story"></main>
+
+<section class="finale" id="finale" data-nav="Home">
+  <div class="girih"></div>
+  <svg class="star" viewBox="0 0 100 100"><rect x="25" y="25" width="50" height="50"/><rect x="25" y="25" width="50" height="50" transform="rotate(45 50 50)"/><circle cx="50" cy="50" r="10"/></svg>
+  <p class="big split">Seven cities. Sixteen days. One long road home.</p>
+  <figure class="ph P frame arch" data-cap="Swati &amp; Dhruv, Iran 2025"><div class="ph-in"><img src="couple.jpg" alt="Swati and Dhruv in Iran" loading="lazy"></div></figure>
+  <p class="names">Swati &amp; Dhruv</p>
+  <p class="label">Iran · 7 — 22 June 2025</p>
+  <p class="fa">به امید دیدار</p>
+  <p class="bye">Until we meet again.</p>
+</section>
+<footer>Iran · An eye-opening tour · 2025</footer>
+
+<div class="lb" id="lb"><button class="x" aria-label="Close">✕</button><button class="pv" aria-label="Previous">‹</button><img alt=""><button class="nx" aria-label="Next">›</button><div class="cap"></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+/* ---------- data ---------- */
+const OR={};"1:L 2:P 3:P 4:L 5:L 6:S 7:P 8:P 9:P 10:P 11:P 12:L 13:P 14:P 15:P 16:P 17:P 18:P 19:P 20:P 21:P 22:P 23:P 24:P 25:L 26:L 27:P 28:L 29:P 30:P 31:P 32:P 33:P 34:P 35:P 36:P 37:P 38:L 39:P 40:P 41:P 42:P 43:P 44:P 45:P 46:L 47:P 48:P 49:P 50:P 51:P 52:P 53:P 54:P 55:P 56:P 57:P 58:P 59:P 60:P 61:P 62:P 63:L 64:P 65:P 66:L 67:P 68:P 69:L 70:P 71:L 72:P 73:L 74:L 75:P 76:P 77:L 78:L 79:P 80:L 81:P 82:L 83:L 84:P 85:P 86:L 87:L 88:L 89:P 90:P 91:P 92:L 93:P 94:P 95:L 96:P 97:L 98:L 99:P 100:P 101:L 102:P 103:P 104:P 105:P 106:P 107:L 108:P 109:L 110:L 111:P 112:L".split(' ').forEach(s=>{const[a,b]=s.split(':');OR[a]=b});
+
+const STORY=[
+ {type:'chap',id:'tehran',num:'I',en:'Tehran',fa:'تهران',bg:12,line:'A first glass of tea, a palace of mirrors, and a city that welcomed us in.',
+  moments:[{t:'First tea in Tehran — with music',i:[8,7,10,9]},{t:'Golestan Palace',i:[12,11,14,13]}]},
+ {type:'chap',id:'kashan',num:'II',en:'Kashan',fa:'کاشان',bg:28,line:'Courtyard houses, a bathhouse of mazes, and a bazaar beneath a dome of light.',
+  moments:[{t:'Our stay in Kashan',i:[16,15,18,17]}]},
+ {type:'rial'},
+ {type:'more',city:'Kashan',start:2,moments:[
+   {t:'Two historical houses — a story of love, longing and architecture',i:[20,23,22,21]},
+   {t:'The hammam — a community bath with more mazes than we could count',i:[25,24,26]},
+   {t:'The father-in-law’s house',i:[28,27,29]},
+   {t:'The only mosque in Iran with a school',i:[30,31],arch:true},
+   {t:'Aminoddole Caravanserai, Grand Bazaar of Kashan',i:[32,33]},
+   {t:'That’s how Iranis add sugar to their tea',i:[35,34]},
+   {t:'Khaana + masaala',i:[37,36]}]},
+ {type:'chap',id:'abyaneh',num:'III',en:'Abyaneh',fa:'ابیانه',bg:38,line:'A red-earth village on the mountainside — historical, traditional, unhurried.',
+  moments:[{t:'Abyaneh — a historical, traditional town',i:[39,38,41,40]},{t:'Lanes of Abyaneh',i:[43,42,45,44]}]},
+ {type:'chap',id:'isfahan',num:'IV',en:'Isfahan',fa:'اصفهان',bg:46,line:'Esfahan, nesf-e jahan.<span class="tr">Isfahan is half the world.</span>',horizontal:true,
+  moments:[{t:'Naqsh-e Jahan Square',i:[46]},{t:'The royal family’s mosque',i:[48,47,50,49]},{t:'The mosque for the public',i:[52,51,53]},
+   {t:'The administrative office of the square',i:[55,54,56]},{t:'Chehel Sotoun Palace',i:[58,57,60,59]},{t:'Khajoo Bridge',i:[62,61,63]},
+   {t:'The Armenian church',i:[65,64,66]},{t:'Isfahan, in passing',i:[68,67,69]}]},
+ {type:'chap',id:'shiraz',num:'V',en:'Shiraz',fa:'شیراز',bg:71,line:'The city of literature, poetry, gardens and love.',
+  moments:[{t:'Shiraz',i:[71,70,72]},{t:'The bus · the bus stop',i:[73,75,74]},{t:'Shiraz days',i:[77,76,78]},{t:'Shiraz evenings',i:[80,79,81]}]},
+ {type:'pink'},
+ {type:'rupture'},
+ {type:'evac'},
+ {type:'chap',id:'yazd',num:'VI',en:'Yazd',fa:'یزد',bg:88,line:'A UNESCO city of mud-brick lanes, wind towers and an eternal flame.',
+  moments:[{t:'Yazd — a UNESCO city',i:[88,87,90,89]},{t:'Through the old city',i:[92,91,93]},{t:'The breakfast basement',i:[95,94]},
+   {t:'The fire temple',i:[97,96,98]},{t:'Dowlatabad Garden & the world’s tallest wind tower',i:[100,99,101]},
+   {t:'A family’s tale of adventure, separation and reunion',i:[103,102,104]}]},
+ {type:'chap',id:'mashhad',num:'VII',en:'Mashhad',fa:'مشهد',bg:107,line:'The longest bus ride, a holy shrine — and the flight home.',
+  moments:[{t:'The longest bus ride to Mashhad · the holy shrine',i:[106,105,108,107]},
+   {t:'Outside Mashhad airport, to board our evacuation flight',i:[110,109],badge:'Evacuation flight'},
+   {t:'Back to India — Delhi & Ahmedabad airport',i:[112,111]}]}
+];
+
+/* ---------- render ---------- */
+const esc=s=>s.replace(/<[^>]*>/g,'').replace(/"/g,'&quot;');
+const fig=(n,cap)=>`<figure class="ph ${OR[n]||'P'}" data-cap="${esc(cap)}"><div class="ph-in"><img src="image${n}.jpg" alt="${esc(cap)}" loading="lazy" decoding="async"></div></figure>`;
+let alt=0;
+const moment=(m,label)=>{alt++;return `<article class="moment ${alt%2?'':'right'}">
+ <header class="m-h"><span class="label">${label}</span><h3 class="m-t split">${m.t}</h3>${m.badge?`<span class="badge"><i></i>${m.badge}</span>`:''}<span class="m-rule"></span></header>
+ <div class="g n${m.i.length} ${m.arch?'arch':''}">${m.i.map(n=>fig(n,m.t)).join('')}</div></article>`};
+const pad=k=>String(k).padStart(2,'0');
+
+document.getElementById('prologueGallery').innerHTML=moment({t:'The ones who made the journey',i:[3,2,5,4]},'The group');
+
+let html='';
+STORY.forEach(s=>{
+ if(s.type==='chap'){
+  html+=`<section class="chap" id="c-${s.id}" data-nav="${s.en}"><div class="chap-bg"><img src="image${s.bg}.jpg" alt="${s.en}" loading="lazy"></div><div class="chap-veil"></div>
+   <div class="chap-c"><div class="chap-num">${s.num}</div><div class="chap-fa">${s.fa}</div><h2 class="chap-en">${s.en}</h2><p class="chap-line">${s.line}</p></div></section>`;
+  if(s.horizontal){
+   html+=`<section class="hz" id="hz-${s.id}"><div class="hz-track">${s.moments.map((m,k)=>`<div class="hz-p"><div class="hz-meta"><span class="label">${s.en} · ${pad(k+1)}</span><h3>${m.t}</h3></div><div class="hz-imgs">${m.i.map(n=>fig(n,m.t)).join('')}</div></div>`).join('')}<div class="hz-end"><p>اصفهان نصف جهان</p></div></div></section>`;
+  } else html+=`<div class="moments">${s.moments.map((m,k)=>moment(m,s.en+' · '+pad(k+1))).join('')}</div>`;
+ }
+ if(s.type==='more') html+=`<div class="moments">${s.moments.map((m,k)=>moment(m,s.city+' · '+pad(k+s.start))).join('')}</div>`;
+ if(s.type==='rial') html+=`<section class="inter"><div class="girih"></div><div class="inter-in">
+   <div><span class="label">Interlude · Kashan</span><div class="rial" id="rial">0</div><small>Iranian Rials, give or take</small>
+   <q class="split" style="margin-top:2rem">How many US dollars do you think we exchanged to get these many Rials?</q></div>
+   <div>${fig(19,'A pile of Rials')}</div></div></section>`;
+ if(s.type==='pink') html+=`<section class="pink" id="pink"><div class="pink-bg"><img src="image83.jpg" alt="Nasir al-Mulk Mosque" loading="lazy"></div><div class="pink-light"></div>
+   <div class="pink-c"><span class="label" style="color:var(--rose)">Shiraz · the jewel</span><h3 class="split">The Nasir al-Mulk Mosque, or <em>the Pink Mosque</em></h3></div></section>
+   <div class="moments" style="padding-top:14vh">${moment({t:'Light through coloured glass',i:[82,85,84]},'Shiraz · 05')}</div>`;
+ if(s.type==='rupture') html+=`<section class="rupture" id="rupture" data-nav="13 June"><div class="glow"></div><div class="rupture-c">
+   <div class="date">13 June 2025</div>
+   <p class="rl">Halfway through the journey, conflict broke out.</p>
+   <p class="rl">Iran’s airspace closed. The way home we had planned <em>was gone.</em></p>
+   <p class="rl">The tour became an evacuation — overland, east, the long way round.</p></div></section>`;
+ if(s.type==='evac') html+=`<section class="evac" id="evac"><div class="evac-bg"><img src="image86.jpg" alt="Evacuation, Shiraz to Yazd" loading="lazy"></div>
+   <div class="evac-c"><span class="badge"><i></i>Evacuation · Phase 1</span><div class="km"><span id="km">0</span><sup>KM</sup></div>
+   <h3>Shiraz<b>→</b>Yazd</h3><p class="label" style="margin-top:1rem;color:var(--muted)">500 – 600 km by road</p></div></section>`;
+});
+document.getElementById('story').innerHTML=html;
+
+/* nav */
+let lenis=null;
+const nav=document.getElementById('nav');
+const navSecs=[...document.querySelectorAll('[data-nav]')];
+navSecs.forEach(sec=>{
+ const a=document.createElement('a');a.innerHTML=`<i></i><span>${sec.dataset.nav}</span>`;
+ a.onclick=()=>lenis?lenis.scrollTo(sec,{duration:2}):sec.scrollIntoView({behavior:'smooth'});nav.appendChild(a);sec._nav=a;
+});
+
+/* map */
+(function(){
+ const svg=document.getElementById('map');
+ const C={Tehran:[201,162,'تهران',-1],Kashan:[205,281,'کاشان',1],Abyaneh:[216,309,'ابیانه',-1],Isfahan:[221,375,'اصفهان',1],Shiraz:[284,589,'شیراز',1],Yazd:[417,428,'یزد',1],Mashhad:[799,119,'مشهد',1]};
+ let g='';for(let x=100;x<=1000;x+=75)g+=`<line class="gridl" x1="${x}" y1="60" x2="${x}" y2="660"/>`;for(let y=70;y<=660;y+=70)g+=`<line class="gridl" x1="80" y1="${y}" x2="1020" y2="${y}"/>`;
+ g+=`<path class="p ghost" d="M284 589 Q100 400 201 162" stroke="rgba(246,240,230,.35)" stroke-width="2" stroke-dasharray="6 9"/>`;
+ g+=`<path class="p tour" d="M201 162 Q186 222 205 281 Q212 296 216 309 Q228 342 221 375 Q236 492 284 589" stroke="#d9a441" stroke-width="3"/>`;
+ g+=`<path class="p evacP" d="M284 589 Q340 470 417 428 Q650 340 799 119" stroke="#e2574c" stroke-width="3"/>`;
+ g+=`<path class="p fly" d="M799 119 Q960 230 1000 560" stroke="#e2574c" stroke-width="2" stroke-dasharray="3 10"/>`;
+ g+=`<text class="flash fl1" x="330" y="640">13 June — the skies close</text>`;
+ g+=`<text class="flash flyT" x="990" y="600" text-anchor="end" style="font-size:22px">flight to India →</text>`;
+ Object.entries(C).forEach(([n,[x,y,f,s]])=>{const tx=s>0?x+20:x-20,an=s>0?'start':'end';
+  g+=`<g class="city" data-c="${n}"><circle class="o" cx="${x}" cy="${y}" r="13"/><circle class="c" cx="${x}" cy="${y}" r="5"/><text x="${tx}" y="${y+2}" text-anchor="${an}">${n}</text><text class="f" x="${tx}" y="${y+30}" text-anchor="${an}">${f}</text></g>`});
+ svg.innerHTML=g;
+})();
+
+/* split words */
+document.querySelectorAll('.split').forEach(el=>{
+ const walk=node=>{[...node.childNodes].forEach(c=>{if(c.nodeType===3){const frag=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(t=>{if(!t)return;if(/^\s+$/.test(t)){frag.append(t);return}const w=document.createElement('span');w.className='w';const wi=document.createElement('span');wi.className='wi';wi.textContent=t;w.append(wi);frag.append(w)});c.replaceWith(frag)}else if(c.nodeType===1)walk(c)})};walk(el);
+});
+document.getElementById('heroTitle').innerHTML=[...'IRAN'].map(c=>`<span class="ch">${c}</span>`).join('');
+
+/* lightbox */
+const figs=[...document.querySelectorAll('figure.ph')];const lb=document.getElementById('lb'),lbI=lb.querySelector('img'),lbC=lb.querySelector('.cap');let cur=0;
+const show=i=>{cur=(i+figs.length)%figs.length;const f=figs[cur];lbI.src=f.querySelector('img').src;lbC.textContent=f.dataset.cap||''};
+figs.forEach((f,i)=>f.addEventListener('click',()=>{show(i);lb.classList.add('open');lenis&&lenis.stop()}));
+const closeLb=()=>{lb.classList.remove('open');lenis&&lenis.start()};
+lb.querySelector('.x').onclick=closeLb;lb.querySelector('.pv').onclick=e=>{e.stopPropagation();show(cur-1)};lb.querySelector('.nx').onclick=e=>{e.stopPropagation();show(cur+1)};
+lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1)});
+let tx0=0;lb.addEventListener('touchstart',e=>tx0=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx0;if(Math.abs(d)>50)show(cur+(d<0?1:-1))});
+
+/* ---------- motion ---------- */
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const hasGSAP=typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined';
+if(!hasGSAP){document.getElementById('pre').remove();document.querySelectorAll('.rl').forEach(e=>e.style.opacity=1);nav.classList.add('on')}
+else{
+gsap.registerPlugin(ScrollTrigger);
+if(!reduce&&typeof Lenis!=='undefined'){lenis=new Lenis({duration:1.25,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t)),smoothWheel:true});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);lenis.stop()}
+window.scrollTo(0,0);
+
+/* preloader + hero intro */
+const pre=document.getElementById('pre');
+gsap.set('.pre rect,.pre circle',{strokeDasharray:400,strokeDashoffset:400});
+gsap.timeline().to('.pre rect,.pre circle',{strokeDashoffset:0,duration:1.6,stagger:.12,ease:'power2.inOut'}).to('.pre .fa',{opacity:1,duration:.8},'-=.9');
+gsap.set('.hero h1 .ch',{yPercent:110,opacity:0,rotateX:-60});
+gsap.set('.hero-fa,.hero .sub,.hero .sub2,.hero .dates,.scroll-hint',{opacity:0,y:24});
+const heroImg=document.getElementById('heroImg');
+const ready=new Promise(r=>{if(heroImg.complete)r();else{heroImg.onload=r;heroImg.onerror=r}setTimeout(r,4000)});
+Promise.all([ready,new Promise(r=>setTimeout(r,1900))]).then(()=>{
+ const tl=gsap.timeline({onComplete:()=>{pre.remove();lenis&&lenis.start();ScrollTrigger.refresh()}});
+ tl.to(pre,{clipPath:'inset(0 0 100% 0)',duration:1.1,ease:'expo.inOut'})
+   .to('.hero-bg img',{scale:1.05,duration:2.6,ease:'power3.out'},'-=.8')
+   .to('.hero-fa',{opacity:1,y:0,duration:1},'-=2.2')
+   .to('.hero h1 .ch',{yPercent:0,opacity:1,rotateX:0,stagger:.09,duration:1.3,ease:'expo.out'},'-=2')
+   .to('.hero .sub,.hero .sub2,.hero .dates,.scroll-hint',{opacity:1,y:0,stagger:.12,duration:1},'-=1.1');
+});
+gsap.to('.hero-bg',{yPercent:18,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+gsap.to('.hero-c',{yPercent:-30,autoAlpha:0,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'80% top',scrub:true}});
+
+gsap.to('.progress',{scaleX:1,ease:'none',scrollTrigger:{start:0,end:'max',scrub:.3}});
+
+/* text reveals */
+document.querySelectorAll('.split').forEach(el=>{if(el.closest('.rupture'))return;gsap.from(el.querySelectorAll('.wi'),{yPercent:115,opacity:0,duration:1.1,stagger:.035,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 88%'}})});
+gsap.utils.toArray('.fade').forEach(el=>gsap.from(el,{opacity:0,y:30,filter:'blur(6px)',duration:1.2,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));
+gsap.utils.toArray('.m-rule').forEach(el=>gsap.from(el,{scaleX:0,duration:1.2,ease:'expo.out',scrollTrigger:{trigger:el,start:'top 92%'}}));
+
+/* photo reveals + parallax */
+const speeds=[0,-14,-6,-20];
+const desk=matchMedia('(min-width: 900px)').matches;
+gsap.utils.toArray('.moments figure.ph, .inter figure.ph').forEach(f=>{
+ const inner=f.querySelector('.ph-in'),im=f.querySelector('img'),i=[...f.parentNode.children].indexOf(f);
+ const st={trigger:f,start:'top 92%'};
+ gsap.fromTo(inner,{clipPath:'inset(100% 0% 0% 0%)'},{clipPath:'inset(0% 0% 0% 0%)',duration:1.4,delay:i*.08,ease:'expo.out',scrollTrigger:st});
+ gsap.fromTo(im,{scale:1.3},{scale:1,duration:2,delay:i*.08,ease:'expo.out',scrollTrigger:st});
+ if(desk&&speeds[i])gsap.to(f,{yPercent:speeds[i],ease:'none',scrollTrigger:{trigger:f.parentNode,start:'top bottom',end:'bottom top',scrub:true}});
+});
+
+/* chapter intros */
+gsap.utils.toArray('.chap').forEach(c=>{
+ gsap.fromTo(c.querySelector('.chap-bg img'),{scale:1.25,yPercent:-6},{scale:1,yPercent:6,ease:'none',scrollTrigger:{trigger:c,start:'top bottom',end:'bottom top',scrub:true}});
+ gsap.timeline({scrollTrigger:{trigger:c,start:'top 60%'}})
+   .from(c.querySelector('.chap-num'),{opacity:0,letterSpacing:'1.4em',duration:1.4,ease:'expo.out'})
+   .fromTo(c.querySelector('.chap-fa'),{clipPath:'inset(0 0 0 100%)'},{clipPath:'inset(0 0 0 0%)',duration:1.8,ease:'power3.inOut'},'-=1.1')
+   .from(c.querySelector('.chap-en'),{opacity:0,y:40,letterSpacing:'.5em',filter:'blur(10px)',duration:1.4,ease:'expo.out'},'-=1.1')
+   .from(c.querySelector('.chap-line'),{opacity:0,y:20,duration:1.2},'-=.9');
+});
+
+/* route map */
+(function(){
+ const q=s=>document.querySelector('#map '+s);
+ const tour=q('.tour'),evacP=q('.evacP'),fly=q('.fly'),ghost=q('.ghost');
+ [tour,evacP].forEach(p=>{const L=p.getTotalLength();gsap.set(p,{strokeDasharray:L,strokeDashoffset:L})});
+ gsap.set([fly,ghost],{opacity:0});
+ const cities=gsap.utils.toArray('#map .city');gsap.set(cities,{opacity:0});gsap.set('#map .flash',{opacity:0});
+ const c=n=>q(`.city[data-c="${n}"]`);
+ const tl=gsap.timeline({scrollTrigger:{trigger:'#route',start:'top top',end:'+=2600',scrub:1,pin:true}});
+ tl.to(c('Tehran'),{opacity:1,duration:.4},0)
+   .to(tour,{strokeDashoffset:0,duration:3,ease:'none'},0)
+   .to(c('Kashan'),{opacity:1,duration:.3},.7).to(c('Abyaneh'),{opacity:1,duration:.3},1).to(c('Isfahan'),{opacity:1,duration:.3},1.5).to(c('Shiraz'),{opacity:1,duration:.3},2.8)
+   .to(ghost,{opacity:1,duration:.6},3.2)
+   .to(q('.fl1'),{opacity:1,duration:.5},3.6)
+   .to(ghost,{opacity:.12,duration:.6},4.1)
+   .to(evacP,{strokeDashoffset:0,duration:2.6,ease:'none'},4.3)
+   .to(c('Yazd'),{opacity:1,duration:.3},5.0).to(c('Mashhad'),{opacity:1,duration:.3},6.7)
+   .to(fly,{opacity:1,duration:.8},7.0).to(q('.flyT'),{opacity:1,duration:.6},7.3).to({},{duration:.6});
+})();
+
+/* rials counter */
+const rial={v:0};gsap.to(rial,{v:10000000,duration:2.6,ease:'power2.out',scrollTrigger:{trigger:'#rial',start:'top 88%'},onUpdate:()=>{document.getElementById('rial').textContent=Math.round(rial.v).toLocaleString('en-IN')+(rial.v>=9999999?'+':'')}});
+
+/* isfahan horizontal */
+gsap.matchMedia().add('(min-width: 900px)',()=>{
+ document.querySelectorAll('.hz').forEach(hz=>{
+  const track=hz.querySelector('.hz-track');const dist=()=>Math.max(0,track.scrollWidth-innerWidth);
+  const anim=gsap.to(track,{x:()=>-dist(),ease:'none',scrollTrigger:{trigger:hz,pin:true,scrub:1,end:()=>'+='+dist(),invalidateOnRefresh:true}});
+  hz.querySelectorAll('.hz-p').forEach(p=>{
+   gsap.from(p.querySelectorAll('.ph'),{y:80,opacity:0,stagger:.1,duration:1,ease:'expo.out',scrollTrigger:{trigger:p,containerAnimation:anim,start:'left 90%'}});
+   gsap.from(p.querySelector('.hz-meta'),{x:60,opacity:0,duration:1,ease:'expo.out',scrollTrigger:{trigger:p,containerAnimation:anim,start:'left 85%'}});
+  });
+ });
+});
+
+/* pink mosque */
+gsap.fromTo('#pink .pink-bg img',{scale:1.3},{scale:1,ease:'none',scrollTrigger:{trigger:'#pink',start:'top bottom',end:'bottom top',scrub:true}});
+
+/* rupture */
+gsap.set('#rupture .rl',{y:20});
+gsap.timeline({scrollTrigger:{trigger:'#rupture',start:'top top',end:'+=1800',scrub:1,pin:true}})
+  .from('#rupture .date',{opacity:0,scale:1.4,filter:'blur(14px)',duration:1})
+  .to('#rupture .glow',{opacity:1,duration:1},'<')
+  .to('#rupture .rl',{opacity:1,y:0,stagger:.9,duration:.8})
+  .to('#rupture .glow',{scale:1.3,opacity:.5,duration:1},'<')
+  .to({},{duration:.6});
+
+/* evacuation km */
+const km={v:0};
+gsap.timeline({scrollTrigger:{trigger:'#evac',start:'top top',end:'+=1100',scrub:1,pin:true}})
+ .fromTo('#evac .evac-bg img',{scale:1.2},{scale:1,ease:'none',duration:1})
+ .to(km,{v:600,ease:'none',duration:1,onUpdate:()=>{document.getElementById('km').textContent=Math.round(km.v)}},'<')
+ .from('#evac h3,#evac .evac-c > .label',{opacity:0,y:20,duration:.3},'-=.4');
+
+/* finale */
+gsap.fromTo('.finale .star',{rotate:-90,opacity:0},{rotate:0,opacity:1,duration:2,ease:'expo.out',scrollTrigger:{trigger:'.finale',start:'top 70%'}});
+const ff=document.querySelector('.finale .frame');
+gsap.fromTo(ff.querySelector('.ph-in'),{clipPath:'inset(100% 0 0 0)'},{clipPath:'inset(0% 0 0 0)',duration:1.8,ease:'expo.inOut',scrollTrigger:{trigger:ff,start:'top 85%'}});
+gsap.from('.finale .names,.finale > .label,.finale .fa,.finale .bye',{opacity:0,y:24,stagger:.18,duration:1.2,scrollTrigger:{trigger:'.finale .names',start:'top 95%'}});
+
+/* nav state — created last so pin spacing is known */
+ScrollTrigger.create({trigger:'#prologue',start:'top 60%',onEnter:()=>nav.classList.add('on'),onLeaveBack:()=>nav.classList.remove('on')});
+navSecs.forEach((sec,i)=>ScrollTrigger.create({trigger:sec,start:'top 55%',endTrigger:navSecs[i+1]||'footer',end:navSecs[i+1]?'top 55%':'bottom bottom',
+ onToggle:s=>{if(s.isActive){nav.querySelectorAll('a').forEach(a=>a.classList.remove('active'));sec._nav.classList.add('active')}}}));
+
+ScrollTrigger.sort&&ScrollTrigger.sort();
+document.fonts&&document.fonts.ready.then(()=>ScrollTrigger.refresh());
+addEventListener('load',()=>ScrollTrigger.refresh());
+}
+</script>
+</body>
+</html>
